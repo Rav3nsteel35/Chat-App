@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Login{% endblock %}
+
+{% block messageGrey %}
+{{session["name"]}}  logged out!
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Welcome to the Chat Room</h1>
+    <div class="row mt-4">
+        <div class="col">
+            <!-- <button id = "test" type="button" class="btn btn-primary btn-lg">Start Chat</button> -->
+            
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script type= "text/javascript" src = "{{ url_for('static', filename = 'index.js') }}"></script>
+        </div>
+    </div>
+</div>
+
+<div class="login-page">
+    <div class="form">
+      <form class="login-form" action="#" method="POST">
+        <label for="inputName" class="sr-only">Enter you name: </label>
+        <input type="text" name="inputName" id="inputName" placeholder="First name"/>
+        <button type="submit" class="btn btn-success mb-2">Submit</button>
+      </form>
+    </div>
+  </div>
+{% endblock %}

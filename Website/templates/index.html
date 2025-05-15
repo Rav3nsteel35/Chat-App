@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Chat Room{% endblock %}
+
+{% block content %}
+<!-- <div class="container">
+    <h1>Welcome to the Chat Room</h1>
+    <div class="row mt-4">
+        <div class="col">
+            <button id = "test" type="button" class="btn btn-primary btn-lg">Start Chat</button>
+            
+        </div>
+    </div>
+</div> -->
+
+
+<div class="input-group mb-3">
+    <input type="text" id = 'msg' class="form-control" placeholder="Type your message" aria-label="message" aria-describedby="button-addon2">
+    <button class="btn btn-outline-secondary" type="button" id="sendBtn">Send</button>
+</div>
+{% endblock %}
